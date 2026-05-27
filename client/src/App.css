@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0a;
+  color: #00ff00;
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content {
+  flex: 1;
+  margin-top: 60px; /* Same as navbar height */
+  margin-bottom: 40px; /* Same as taskbar height */
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure the main content area is below windows */
+.content {
+  pointer-events: auto;
+}
+
+.coming-soon {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #00ff00;
+  border: 2px dashed #00ff00;
+  margin: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.settings {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.reset-button {
+  background: transparent;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  padding: 15px 30px;
+  font-family: 'Fira Code', monospace;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-button:hover {
+  background: #00ff00;
+  color: #0a0a0a;
+  transform: scale(1.05);
+}
+
+.terminal-title {
+  color: #00ff00;
+  font-size: 28px;
+  border-bottom: 2px solid #00ff00;
+  padding-bottom: 10px;
+}

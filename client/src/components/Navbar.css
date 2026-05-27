@@ -1,0 +1,165 @@
+.navbar {
+   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #0a0a0a;
+  border-bottom: 2px solid #00ff00;
+  background: #0a0a0a;
+  border-bottom: 2px solid #00ff00;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  color: #00ff00;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.system-icon {
+  background: #00ff00;
+  color: #0a0a0a;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #00ff00;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  border-color: #00ff00;
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.nav-link.active {
+  background: #00ff00;
+  color: #0a0a0a;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.taskbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.taskbar-icon {
+  font-size: 14px;
+}
+
+.taskbar-text {
+  color: #00ff00;
+}
+
+.time-display {
+  background: rgba(0, 255, 0, 0.2);
+}
+
+.download-resume-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #00ff00;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-resume-btn:hover {
+  background: #00ff00;
+  color: #0a0a0a;
+  transform: scale(1.05);
+}
+
+.contact-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #00ff00;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background: #00ff00;
+  color: #0a0a0a;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .navbar-left {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbar-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .taskbar-text {
+    display: none;
+  }
+  
+  .taskbar-item {
+    padding: 5px;
+  }
+}

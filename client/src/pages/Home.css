@@ -1,0 +1,154 @@
+.home {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #00ff00;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal-container {
+  max-width: 800px;
+  width: 100%;
+  background: #0a0a0a;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.2);
+}
+
+.ascii-art {
+  color: #00ff00;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  text-align: center;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.system-info {
+  margin-bottom: 30px;
+  border: 1px solid #00ff00;
+  padding: 20px;
+  background: rgba(0, 255, 0, 0.05);
+}
+
+.info-line {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.label {
+  color: #00ff00;
+  font-weight: bold;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+.command-prompt {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: rgba(0, 255, 0, 0.1);
+  border-left: 4px solid #00ff00;
+}
+
+.path {
+  color: #00ff00;
+  margin-right: 10px;
+}
+
+.command {
+  color: #ffffff;
+}
+
+.output {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(0, 255, 0, 0.05);
+  border: 1px dashed #00ff00;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.quick-commands {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.command-item {
+  padding: 15px;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.command-item:hover {
+  background: #00ff00;
+  color: #0a0a0a;
+}
+
+.contact-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(0, 255, 0, 0.05);
+  border: 1px solid #00ff00;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+}
+
+.contact-email {
+  color: #00ff00;
+  text-decoration: none;
+  border: 1px solid #00ff00;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.contact-email:hover {
+  background: #00ff00;
+  color: #0a0a0a;
+  cursor: pointer;
+}
+
+.system-status {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+}
+
+.status-led {
+  color: #00ff00;
+  margin-right: 5px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@media (max-width: 600px) {
+  .quick-commands {
+    grid-template-columns: 1fr;
+  }
+  
+  .ascii-art {
+    font-size: 8px;
+  }
+}

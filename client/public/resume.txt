@@ -1,0 +1,100 @@
+================================================================================
+                    BISWAJIT PANDA - RESUME
+                  Software Engineer | MERN Stack Developer
+================================================================================
+
+EMAIL: biswajitpanda871@gmail.com
+GITHUB: [Add your GitHub profile]
+LINKEDIN: [Add your LinkedIn profile]
+PORTFOLIO: [Your portfolio URL]
+
+================================================================================
+                            PROFESSIONAL SUMMARY
+================================================================================
+
+Software Engineer specializing in full-stack development with expertise in MERN
+stack (MongoDB, Express.js, React, Node.js). Experienced in building scalable
+web applications, AI integration, and data analysis. Fresher/0-1 year experience
+with strong problem-solving skills and passion for innovative technology solutions.
+
+================================================================================
+                            CORE COMPETENCIES
+================================================================================
+
+Frontend Development:
+  - React.js, React Router, Redux Toolkit
+  - HTML5, CSS3, Tailwind CSS, Framer Motion
+  - Responsive Web Design, UI/UX Implementation
+
+Backend Development:
+  - Node.js, Express.js
+  - MongoDB, Database Design
+  - RESTful API Development, Authentication
+
+Additional Skills:
+  - AI Integration (LangChain, OpenAI)
+  - Data Analysis and Visualization
+  - Git/GitHub Version Control
+  - Vite, ESLint Configuration
+
+================================================================================
+                              EXPERIENCE
+================================================================================
+
+Position: Software Engineer
+Status: Currently Available
+Duration: Fresher (0-1 year experience)
+
+Key Achievements:
+  ✓ Developed full-stack portfolio application with terminal-style UI
+  ✓ Implemented Redux state management for complex applications
+  ✓ Integrated AI models for intelligent features
+  ✓ Created responsive and interactive web interfaces
+  ✓ Optimized performance and user experience
+
+================================================================================
+                            TECHNICAL PROJECTS
+================================================================================
+
+Portfolio Website (MERN Stack)
+  - Full-stack portfolio with retro terminal aesthetic
+  - Built with React, Node.js, MongoDB, and Redux
+  - Features: Project showcase, experience timeline, interactive UI
+  - Technologies: React Router, Framer Motion, Tailwind CSS
+
+Additional Projects:
+  - Various MERN stack applications
+  - AI-integrated features
+  - Data analysis dashboards
+
+================================================================================
+                            EDUCATION & CERTIFICATIONS
+================================================================================
+
+[Add your educational background here]
+[Add relevant certifications here]
+
+================================================================================
+                            ACHIEVEMENTS & CERTIFICATIONS
+================================================================================
+
+✓ Full-Stack Web Development
+✓ MERN Stack Development
+✓ AI & Machine Learning Integration
+✓ Data Analysis and Visualization
+
+================================================================================
+                              LANGUAGES
+================================================================================
+
+- English (Fluent)
+- [Add other languages if applicable]
+
+================================================================================
+
+For the latest version of this resume and my portfolio, visit:
+https://your-portfolio-url.com
+
+Contact: biswajitpanda871@gmail.com
+
+================================================================================

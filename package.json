@@ -1,0 +1,35 @@
+{
+  "name": "biswajit-portfolio",
+  "version": "1.0.0",
+  "description": "Biswajit Panda's Portfolio - MERN Stack with Retro Terminal UI",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev:client",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev:all": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "build": "npm run build:client",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm install",
+    "preview": "cd client && npm run preview",
+    "lint": "cd client && npm run lint",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "start": "npm run dev:client",
+    "deploy:vercel": "vercel",
+    "deploy:vercel:prod": "vercel --prod"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/your-repo-name.git"
+  },
+  "author": "Biswajit Panda",
+  "email": "biswajitpanda871@gmail.com",
+  "license": "MIT",
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  }
+}
