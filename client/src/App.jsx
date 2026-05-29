@@ -47,7 +47,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/projects" element={<Projects />} />
-                  <Route path="/achievements" element={<Achievements />} />
+                  <Route path="/aboutme" element={<Achievements />} />
                   <Route path="/settings" element={
                     <div className="settings">
                       <h2 className="terminal-title">SYSTEM SETTINGS</h2>

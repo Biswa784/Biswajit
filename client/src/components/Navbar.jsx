@@ -109,7 +109,7 @@ const Navbar = () => {
             [PROJECTS]
           </Link>
           <Link 
-            to="/achievements" 
+            to="/aboutme" 
             className={`nav-link ${location.pathname === '/achievements' ? 'active' : ''}`}
             onClick={(e) => handleNavClick(e, '/achievements')}
             onMouseEnter={() => handleMouseEnter('hover')}
