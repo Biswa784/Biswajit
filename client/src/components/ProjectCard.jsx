@@ -8,6 +8,12 @@ const ProjectCard = ({ project }) => {
         <span className="card-prompt">C:\Projects\{project.name}&gt;</span>
       </div>
       
+      {project.imageUrl && (
+        <div className="card-image">
+          <img src={project.imageUrl} alt={project.name} />
+        </div>
+      )}
+      
       <div className="card-content">
         <h3 className="project-name">{project.name}</h3>
         <p className="project-description">{project.description}</p>

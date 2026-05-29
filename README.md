@@ -1,259 +1,321 @@
-# 🚀 Biswajit Panda's Portfolio
+# Biswajit Panda's Portfolio 🚀
 
-A modern, interactive portfolio website built with **MERN Stack** (MongoDB, Express, React, Node.js) featuring a retro terminal-style UI with resume download and project showcase.
+A stunning **MERN Stack** portfolio website with a retro terminal UI theme, showcasing projects, certifications, and achievements.
 
-## ✨ Features
+![React](https://img.shields.io/badge/React-18.0-blue?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-16+-green?logo=node.js)
+![MongoDB](https://img.shields.io/badge/MongoDB-Latest-green?logo=mongodb)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.0-blue?logo=tailwindcss)
+![Vite](https://img.shields.io/badge/Vite-Latest-purple?logo=vite)
 
-### 📄 Resume Download
-- **One-Click Download**: Download your resume directly from the navbar
-- **PDF Format**: Professional resume document ready for sharing with recruiters
-- **Always Updated**: Keep your resume in sync with your portfolio
+## 🎯 Features
 
-### 🔗 Project Links
-- **Live Demo Links**: View working versions of your projects
-- **GitHub Integration**: Link to source code repositories
-- **Technology Stack**: Display technologies used in each project
-- **Project Status**: Show current status of each project (Active, Complete, In Progress)
+✨ **Interactive Terminal UI** - Retro-styled interface with animated ASCII art  
+📱 **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile  
+🎨 **Modern Design** - TailwindCSS + Framer Motion animations  
+📊 **GitHub Integration** - Real-time repository stats and links  
+🔄 **Live Updates** - Backend API for dynamic content  
+⚡ **Fast Performance** - Optimized with Vite build tool  
+🎯 **Project Showcase** - Interactive project cards with detailed modals  
+🏆 **Certifications & Achievements** - Auto-scrolling carousels  
 
-### 📧 Contact Information
-- **Direct Email Link**: Email button in navbar (biswajitpanda871@gmail.com)
-- **Contact Section**: Email displayed prominently on the home page
-- **Easy to Reach**: Click to send email directly from the portfolio
-
-### 🎮 Additional Features
-- Retro terminal-style UI with green text aesthetic
-- Responsive design for all devices
-- Redux state management
-- Smooth animations with Framer Motion
-- Games section (Tetris, Snake)
-- Experience timeline
-- Interactive windows and file system
-
-## 📋 Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
-- **React 19** - UI framework
-- **Vite** - Build tool
-- **Redux Toolkit** - State management
-- **Tailwind CSS** - Styling
-- **Framer Motion** - Animations
-- **React Router** - Navigation
+- **React 18** - UI framework
+- **Vite** - Lightning-fast build tool
+- **TailwindCSS** - Utility-first CSS
+- **Framer Motion** - Smooth animations
+- **React Icons** - Icon library
+- **Redux** - State management (if needed)
 
 ### Backend
-- **Node.js** - Runtime
+- **Node.js** - Runtime environment
 - **Express.js** - Web framework
-- **MongoDB** - Database
-- **Axios** - HTTP client
+- **MongoDB** - NoSQL database
+- **Nodemon** - Development auto-reload
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have installed:
+- **Node.js** (v16 or higher)
+- **npm** or **yarn**
+- **MongoDB** (local or Atlas cluster)
+- **Git**
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Node.js (v18+)
-- npm or yarn
-- MongoDB (local or Atlas)
-
-### Installation
-
-1. **Clone the repository**
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/Biswa784/portfolioBoot.git
 cd portfolioBoot
 ```
 
-2. **Install all dependencies**
+### 2. Install Dependencies
+
+**Frontend:**
 ```bash
-npm run install:all
+cd client
+npm install
 ```
 
-3. **Set up environment variables**
+**Backend:**
 ```bash
-cp .env.example .env.local
+cd ../server
+npm install
 ```
 
-Edit `.env.local` with your configuration:
-```env
-VITE_API_URL=http://localhost:5000/api
-```
+### 3. Setup Environment Variables
 
-4. **For server setup**, create `server/.env`:
+Create a `.env` file in the `server` directory:
 ```env
 NODE_ENV=development
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/portfolio
+CORS_ORIGIN=http://localhost:5173
 ```
 
-### Development
-
-**Run frontend only:**
-```bash
-npm run dev:client
+Create a `.env` file in the `client` directory:
+```env
+VITE_API_URL=http://localhost:5000/api
 ```
 
-**Run backend only:**
-```bash
-npm run dev:server
-```
+### 4. Start Development Servers
 
-**Run both concurrently:**
+**Option A: Run both servers together**
 ```bash
 npm run dev:all
 ```
 
-**Build for production:**
+**Option B: Run separately**
+
+Terminal 1 - Frontend:
 ```bash
-npm run build
+npm run dev:client
 ```
 
-**Preview production build:**
+Terminal 2 - Backend:
 ```bash
-npm run preview
+npm run dev:server
 ```
 
-## 🌐 Deployment to Vercel
-
-### Quick Deploy (Recommended)
-
-1. **Push to GitHub**
-```bash
-git add .
-git commit -m "Initial commit"
-git push origin main
-```
-
-2. **Deploy to Vercel**
-```bash
-npm install -g vercel
-vercel --prod
-```
-
-Or use the Vercel Dashboard:
-- Go to https://vercel.com/dashboard
-- Click "Add New" → "Project"
-- Import your GitHub repository
-- Click "Deploy"
-
-### Environment Variables on Vercel
-
-1. Go to Project Settings → Environment Variables
-2. Add: `VITE_API_URL` = Your backend API URL
-
-For detailed deployment instructions, see [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md)
+The frontend will be available at: `http://localhost:5173`  
+The backend API at: `http://localhost:5000`
 
 ## 📁 Project Structure
 
 ```
 portfolioBoot/
-├── client/                    # Frontend application
+├── client/                 # React frontend
 │   ├── src/
-│   │   ├── components/        # React components
-│   │   ├── pages/            # Page components
-│   │   ├── features/         # Redux slices
-│   │   ├── utils/            # Utility functions
-│   │   ├── App.jsx           # Main app component
-│   │   └── main.jsx          # Entry point
-│   ├── public/
-│   │   ├── resume.txt        # Resume file for download
-│   │   └── vite.svg
-│   ├── package.json
-│   ├── vite.config.js
-│   └── tailwind.config.js
-├── server/                    # Backend API
-│   ├── config/               # Database configuration
-│   ├── models/               # MongoDB schemas
-│   ├── routes/               # API routes
-│   ├── controllers/          # Route controllers
-│   ├── server.js             # Entry point
-│   └── package.json
-├── package.json              # Root scripts
-├── vercel.json               # Vercel configuration
-├── .env.example              # Environment template
-└── VERCEL_DEPLOYMENT.md      # Deployment guide
+│   │   ├── components/    # Reusable React components
+│   │   ├── pages/         # Page components
+│   │   ├── features/      # Redux slices
+│   │   ├── utils/         # Utility functions
+│   │   └── App.jsx
+│   ├── public/            # Static assets
+│   └── vite.config.js
+├── server/                # Node.js backend
+│   ├── config/            # Configuration files
+│   ├── controllers/       # Route controllers
+│   ├── models/            # MongoDB schemas
+│   ├── routes/            # API routes
+│   ├── seeds/             # Database seed data
+│   └── server.js
+├── .env.example           # Environment variables template
+└── README.md
 ```
 
-## 🎯 Key Features Explained
+## 🎨 Components Overview
 
-### Resume Download
-The resume is stored in `client/public/resume.txt`. Users can:
-1. Click the "📄 RESUME" button in the navbar
-2. Download the file automatically
-3. Share it with recruiters
+### Pages
+- **Home** - Landing page with hero section and terminal UI
+- **About Me** - Background, skills, and experience
+- **Projects** - Interactive project showcase with GitHub stats
+- **Games** - Snake Game & Tic Tac Toe
+- **Boot Screen** - Custom retro boot animation
 
-### Project Links
-Projects are fetched from the backend API and displayed with:
-- Project name and description
-- Technology stack tags
-- Live demo link
-- GitHub source code link
-- Project status indicator
+### Features
+- **Project Display** - Real-time GitHub repository statistics
+- **Certifications** - Auto-scrolling certification carousel
+- **Achievements** - Scrollable achievements showcase
+- **Contact Options** - Multiple ways to get in touch
+- **Responsive Terminal** - Mobile-friendly terminal sidebar
 
-### Contact Information
-- **Email Button**: ✉️ MAIL - Direct mailto link
-- **Home Page**: Contact section showing email address
-- **Easy Communication**: One click to start an email
+## 🔌 API Endpoints
 
-## 🔒 Security & Best Practices
+### Projects
+```
+GET  /api/projects           - Get all projects
+GET  /api/projects/:id       - Get specific project
+POST /api/projects           - Create new project (admin only)
+```
 
-- Environment variables for sensitive data
-- CORS protection on backend
-- Input validation on forms
-- MongoDB injection prevention
-- Secure headers configuration
+### Games
+```
+GET  /api/games/snake/scores        - Get snake game scores
+POST /api/games/snake/score         - Save snake game score
+GET  /api/games/tictactoe/matches   - Get tic-tac-toe matches
+```
 
-## 📊 Performance
+### Health Check
+```
+GET  /api/health            - Server health status
+```
 
-- Optimized bundle size with Vite
-- Lazy loading for images and components
-- Minified CSS and JavaScript
-- CDN delivery through Vercel
-- ~2.5s first contentful paint
+## 🎮 Game Features
+
+### Snake Game
+- Classic snake gameplay
+- Score tracking to database
+- Difficulty levels
+- High score leaderboard
+
+### Tic Tac Toe
+- Play against the computer
+- Score history
+- Move tracking
+- Interactive UI
+
+## 📊 Database Schema
+
+### Project
+```javascript
+{
+  id: ObjectId,
+  title: String,
+  description: String,
+  repo: String,
+  technologies: [String],
+  imageUrl: String,
+  stars: Number,
+  forks: Number,
+  createdAt: Date
+}
+```
+
+### SnakeScore
+```javascript
+{
+  playerName: String,
+  score: Number,
+  difficulty: String,
+  date: Date
+}
+```
+
+## 🚢 Deployment
+
+### Frontend (Vercel)
+```bash
+cd client
+npm run build
+# Deploy dist folder to Vercel
+```
+
+### Backend (Render / Railway)
+1. Push code to GitHub
+2. Connect repository to Render/Railway
+3. Add environment variables
+4. Deploy from main branch
+
+## 🛠️ Available Scripts
+
+```bash
+# Root level
+npm run dev:all           # Start both servers
+npm run dev:client        # Start frontend only
+npm run dev:server        # Start backend only
+
+# Client
+npm run dev               # Development server
+npm run build             # Production build
+npm run preview           # Preview production build
+
+# Server
+npm run start             # Production start
+npm run dev               # Development with nodemon
+npm run seed              # Seed database with sample data
+```
+
+## 🐛 Troubleshooting
+
+### Port Already in Use
+```bash
+# Kill process on port 5000
+lsof -ti:5000 | xargs kill -9
+
+# Or change port in .env
+PORT=5001
+```
+
+### MongoDB Connection Error
+```bash
+# Make sure MongoDB is running
+mongod
+
+# Or use MongoDB Atlas connection string
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/portfolio
+```
+
+### Module Not Found
+```bash
+# Clear node_modules and reinstall
+rm -rf node_modules
+npm install
+```
+
+## 📝 Environment Variables Reference
+
+See `.env.example` for complete template.
+
+**Frontend (.env)**
+- `VITE_API_URL` - Backend API base URL
+
+**Backend (.env)**
+- `NODE_ENV` - Environment (development/production)
+- `PORT` - Server port (default: 5000)
+- `MONGODB_URI` - MongoDB connection string
+- `CORS_ORIGIN` - Frontend URL for CORS
+- `JWT_SECRET` - JWT token secret (if using auth)
 
 ## 🤝 Contributing
 
+Contributions are welcome! Feel free to fork and submit pull requests.
+
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## 📞 Contact & Support
-
-- **Email**: biswajitpanda871@gmail.com
-- **Portfolio**: https://your-vercel-domain.com
-- **GitHub**: https://github.com/yourusername
-- **LinkedIn**: https://linkedin.com/in/yourprofile
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+This project is open source and available under the MIT License.
+
+## 👨‍💻 Author
+
+**Biswajit Panda**
+- 📧 Email: biswajitpanda871@gmail.com
+- 🔗 GitHub: [Biswa784](https://github.com/Biswa784)
+- 💼 LinkedIn: [Biswajit Panda](https://linkedin.com/in/biswajit-panda)
 
 ## 🙏 Acknowledgments
 
-- Vite.js for fast build tooling
-- React community for amazing libraries
-- Vercel for easy deployment
-- MongoDB for reliable database
+- [Vite](https://vitejs.dev/) - Next generation frontend tooling
+- [React](https://react.dev/) - UI library
+- [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [MongoDB](https://www.mongodb.com/) - Database
+- [Express.js](https://expressjs.com/) - Web framework
 
-## 📝 Changelog
+## 📞 Support
 
-### Version 1.0.0 (Latest)
-✅ Resume download functionality
-✅ Project links and demo display
-✅ Email contact integration
-✅ Vercel deployment configuration
-✅ Retro terminal UI
-✅ Redux state management
-✅ Responsive design
-
-## 🐛 Known Issues & Improvements
-
-- Consider adding PDF export for resume
-- Add email notification system
-- Implement project filtering
-- Add dark/light theme toggle
-- Mobile optimization improvements
+For issues and questions:
+- Open an [Issue](https://github.com/Biswa784/portfolioBoot/issues)
+- Check existing documentation
+- Review error logs
 
 ---
 
 **Made with ❤️ by Biswajit Panda**
-
-Last Updated: May 27, 2026

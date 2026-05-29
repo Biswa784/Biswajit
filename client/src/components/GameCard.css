@@ -1,0 +1,114 @@
+.game-card {
+  background: #0a0a0a;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  padding: 20px;
+  font-family: 'Fira Code', monospace;
+  color: #00ff00;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.game-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #00ff00;
+  padding-bottom: 10px;
+}
+
+.game-icon {
+  font-size: 24px;
+}
+
+.game-type {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.game-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.game-description {
+  font-size: 12px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.game-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding: 10px;
+  background: rgba(0, 255, 0, 0.05);
+  border-radius: 4px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+
+.stat-icon {
+  font-size: 12px;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.play-button {
+  background: transparent;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  padding: 10px 20px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.play-button:hover {
+  background: #00ff00;
+  color: #0a0a0a;
+}
+
+.play-icon {
+  font-size: 16px;
+}
+
+.game-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  opacity: 0.6;
+  border-top: 1px dashed #00ff00;
+  padding-top: 10px;
+}
+
+.footer-status {
+  color: #00ff00;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

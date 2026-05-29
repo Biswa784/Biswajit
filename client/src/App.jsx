@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import BootScreen from './pages/BootScreen';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import Achievements from './pages/Aboutme';
 import Navbar from './components/Navbar';
 import WindowProvider, { Folder, File } from './components/WindowManager';
 import ExperienceLog from './components/ExperienceLog';
@@ -46,41 +47,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/projects" element={<Projects />} />
-                  <Route path="/play-tetris" element={
-                    <div className="desktop">
-                      <Folder title="Games" icon="🎮">
-                        <File 
-                          title="Tetris" 
-                          icon="🎮"
-                          content={<div>Tetris Game Coming Soon!</div>}
-                        />
-                        <File 
-                          title="Snake" 
-                          icon="🐍"
-                          content={<div>Snake Game Coming Soon!</div>}
-                        />
-                      </Folder>
-                      <Folder title="Documents" icon="📁">
-                        <File 
-                          title="Resume.txt" 
-                          icon="📄"
-                          content={<div>Biswajit Yadav - Resume Content...</div>}
-                        />
-                        <File 
-                          title="Experience.log" 
-                          icon="📋"
-                          content={<ExperienceLog />}
-                        />
-                      </Folder>
-                      <Folder title="Projects" icon="💻">
-                        <File 
-                          title="Portfolio" 
-                          icon="🌐"
-                          content={<div>Portfolio Project Details...</div>}
-                        />
-                      </Folder>
-                    </div>
-                  } />
+                  <Route path="/achievements" element={<Achievements />} />
                   <Route path="/settings" element={
                     <div className="settings">
                       <h2 className="terminal-title">SYSTEM SETTINGS</h2>
